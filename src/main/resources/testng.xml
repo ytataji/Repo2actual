@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Dorman Application Test Automation Test Suite">
+
+	
+
+
+	<test name="Dorman Products search  Test Cases">
+		<classes>
+			<class name="com.dorman.qa.testcases.DormanSearchPageTest"></class>
+			<class name="com.dorman.qa.testcases.Page2"></class>
+			<class name="com.dorman.qa.testcases.Page3"></class>
+			<class name="com.dorman.qa.testcases.Parent4"></class>
+		</classes>
+	</test>
+</suite>
