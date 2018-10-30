@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Dorman Application Test Automation Test Suite]">
   <test name="Dorman Products search  Test Cases(failed)">
     <classes>
-      <class name="com.dorman.qa.testcases.Page2">
+      <class name="com.dorman.qa.testcases.DormanSearchPageTest">
         <methods>
-          <include name="searhc"/>
+          <include name="verifyRecentlyviewditemsResult"/>
+          <include name="verifySpanishSearchResult"/>
+          <include name="screenShot"/>
           <include name="setUp"/>
+          <include name="verifySavedSearchDeletionResult"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.dorman.qa.testcases.Page2 -->
+      </class> <!-- com.dorman.qa.testcases.DormanSearchPageTest -->
     </classes>
   </test> <!-- Dorman Products search  Test Cases(failed) -->
 </suite> <!-- Failed suite [Dorman Application Test Automation Test Suite] -->

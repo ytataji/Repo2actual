@@ -51,8 +51,31 @@ public class DormanSearchPageTest extends TestBase{
 	 ExtentTest child1;
 	 
 	 ExtentTest child2;
+ ExtentTest child3;
 	 
-	 ExtentTest parent1;
+	 ExtentTest child4;
+ ExtentTest child5;
+	 
+	 ExtentTest child6;
+ ExtentTest child7;
+	 
+	 ExtentTest child8;
+ ExtentTest child9;
+	 
+	 ExtentTest child10;
+ ExtentTest child11;
+	 
+	 ExtentTest child12; 
+ ExtentTest child13;
+	 
+	 ExtentTest child14;
+ ExtentTest child15;
+	 
+	 ExtentTest child16;
+ ExtentTest child17;
+	 
+	 ExtentTest child18;
+	 
 	   
 	public DormanSearchPageTest(){
 			super();
@@ -76,8 +99,8 @@ public class DormanSearchPageTest extends TestBase{
    
 	@Test(priority=1,enabled=true)
 	public void searhc(){
-		_test_logger = _extent_report.startTest("My First Test");
-		 parent1=_extent_report.startTest("My First Test1");
+		_test_logger = _extent_report.startTest("DormanAutomation Report");
+		// parent1=_extent_report.startTest("My First Test1");
 		
 	
 		 
@@ -167,9 +190,9 @@ Dormanpage.feedbackno.sendKeys("no");
 		
 		}
 	
-	@Test(priority=3,enabled=false,description="Search with OE # or Interchange #.")
+	@Test(priority=4,enabled=true,description="Search with OE # or Interchange #.")
 	public void verifySearchOEResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search with OE # or Interchange #.");
+		child3 = _extent_report.startTest("Search with OE # or Interchange #.");
 		
 		Dormanpage.SearchYMMPT();
 		
@@ -192,21 +215,21 @@ Dormanpage.feedbackno.sendKeys("no");
 		
 			if(OEnumbertext.equals(Dormanpage.l2.get(i).getText())) {
 				
-				_test_logger.log(LogStatus.PASS, "Validation successful because - we found item with OE number  " +Dormanpage.l2.get(i).getText()+"  when we searched with OEnumber "+OEnumbertext);
+				child3.log(LogStatus.PASS, "Validation successful because - we found item with OE number  " +Dormanpage.l2.get(i).getText()+"  when we searched with OEnumber "+OEnumbertext);
 			}
 			
 			else {
-				_test_logger.log(LogStatus.FAIL, "Validation unsuccessful because - we found item with OE number  " +Dormanpage.l2.get(i).getText()+"  when we searched with OEnumber "+OEnumbertext);
+				child3.log(LogStatus.FAIL, "Validation unsuccessful because - we found item with OE number  " +Dormanpage.l2.get(i).getText()+"  when we searched with OEnumber "+OEnumbertext);
 			}
 			
 			
 		}
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child3);
 		}
 	
-	@Test(priority=4,enabled=false,description="Search with Part number.")
+	@Test(priority=5,enabled=true,description="Search with Part number.")
 	public void verifySearchPTResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search with Part number.");
+		child4 = _extent_report.startTest("Search with Part number.");
 		
 		Dormanpage.SearchYMMPT();
 		String itemname=Dormanpage.l1.get(0).getText();
@@ -215,19 +238,19 @@ Dormanpage.feedbackno.sendKeys("no");
 		Thread.sleep(1000);
 	
 		if(Dormanpage.productname.getText().equals(Dormanpage.l1.get(0).getText())){
-			_test_logger.log(LogStatus.PASS, "Validation successful because - we found item with item-name  " +Dormanpage.l1.get(0).getText()+"  when we searched with item-name "+itemname);
+			child4.log(LogStatus.PASS, "Validation successful because - we found item with item-name  " +Dormanpage.l1.get(0).getText()+"  when we searched with item-name "+itemname);
 		}
 		
 		else {
-			_test_logger.log(LogStatus.FAIL, "Validation unsuccessful because - we found item with item-name  " +Dormanpage.l1.get(0).getText()+"  when we searched with item-name "+itemname);
+			child4.log(LogStatus.FAIL, "Validation unsuccessful because - we found item with item-name  " +Dormanpage.l1.get(0).getText()+"  when we searched with item-name "+itemname);
 		}
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child4);
 		
 		}
 		
-	@Test(priority=5,enabled=false,description="Search with Keyword.")
+	@Test(priority=6,enabled=true,description="Search with Keyword.")
 	public void verifySearchKWResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search with Keyword.");
+		child5 = _extent_report.startTest("Search with Keyword.");
 		Dormanpage.SearchYMMPT();
 		String parttype=Dormanpage.Parttypename.getText();
 		Dormanpage.keywordtext.sendKeys(parttype);
@@ -235,23 +258,23 @@ Dormanpage.feedbackno.sendKeys("no");
 		for(int i=0;i<Dormanpage.l3.size();i++) {
 			
 			if(Dormanpage.l3.get(i).getText().contains("Drain Plug Gasket")) {
-				_test_logger.log(LogStatus.PASS, "Validation successful-because we found item  "+Dormanpage.l3.get(i).getText()+"when we selected parttype dropdown as Oil Drain Plug Gasket ");
+				child5.log(LogStatus.PASS, "Validation successful-because we found item  "+Dormanpage.l3.get(i).getText()+"when we selected parttype dropdown as Oil Drain Plug Gasket ");
 			}
 			
 			else {
-				_test_logger.log(LogStatus.FAIL, "Validation unsuccessful-because we found item  "+Dormanpage.l3.get(i).getText()+"when we selected parttype dropdown as Oil Drain Plug Gasket ");
+				child5.log(LogStatus.FAIL, "Validation unsuccessful-because we found item  "+Dormanpage.l3.get(i).getText()+"when we selected parttype dropdown as Oil Drain Plug Gasket ");
 			}
 			
 		}
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child5);
 		}
 	
-	@Test(priority=6,enabled=false,description="Search with Phrase.")
+	@Test(priority=7,enabled=true,description="Search with Phrase.")
 	public void verifySearchPhraseResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search with Phrase.");
+		child6 = _extent_report.startTest("Search with Phrase.");
 		Dormanpage.SearchYMMPT();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found in pre-search:");
+		child6.log(LogStatus.INFO, "Below are the items found in pre-search:");
 		int x=Dormanpage.l1.size();
 		
 		
@@ -259,7 +282,7 @@ Dormanpage.feedbackno.sendKeys("no");
 		String a4[]=new String[x];
 		
 		for(int i=0;i<x;i++) {
-			_test_logger.log(LogStatus.INFO,Dormanpage.l1.get(i).getText() ); 
+			child6.log(LogStatus.INFO,Dormanpage.l1.get(i).getText() ); 
 			a3[i]=Dormanpage.l1.get(i).getText().toString();
 			
 			}
@@ -282,9 +305,9 @@ Dormanpage.feedbackno.sendKeys("no");
 		driver.switchTo().defaultContent();
 		Dormanpage.RecentActivity.click();
 		
-		Dormanpage.keywordtext.sendKeys("My First Search");
+		/*Dormanpage.keywordtext.sendKeys("My First Search");
 		Dormanpage.keywordclick.click();
-		
+		*/
 		Thread.sleep(20000);
 		
 		driver.switchTo().frame(Dormanpage.RecentActivityframe);
@@ -292,27 +315,27 @@ Dormanpage.feedbackno.sendKeys("no");
 		Dormanpage.SavedSearchName.click();
 		int y=Dormanpage.l1.size();
 		for(int i=0;i<y;i++) {
-			_test_logger.log(LogStatus.INFO,Dormanpage.l1.get(i).getText() ); 
+			child6.log(LogStatus.INFO,Dormanpage.l1.get(i).getText() ); 
 			a4[i]=Dormanpage.l1.get(i).getText().toString();
 			
 			}
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found in saved-search:");
+		child6.log(LogStatus.INFO, "Below are the items found in saved-search:");
 		if(Arrays.equals(a3, a4)) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because- items found in pre-search and saved search are same" ); 
+			child6.log(LogStatus.PASS,"Validation successful because- items found in pre-search and saved search are same" ); 
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because- items found in pre-search and saved search are not same" ); 
+			child6.log(LogStatus.FAIL,"Validation unsuccessful because- items found in pre-search and saved search are not same" ); 
 		}
 		
 	
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child6);
 		}
 	
 
-	@Test(priority=7,enabled=false,description="Total Records Per page - 25, 50, 100.")
+	@Test(priority=8,enabled=true,description="Total Records Per page - 25, 50, 100.")
 	public void verifySearchKEYWORDResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Total Records Per page - 25, 50, 100.");
+		child7 = _extent_report.startTest("Total Records Per page - 25, 50, 100.");
 		
 		
 		Dormanpage.keywordtext.sendKeys("Engine Oil Pan");
@@ -331,24 +354,24 @@ Dormanpage.feedbackno.sendKeys("no");
 			String a[]=s.split(" ");
 			int y = Integer.parseInt(a[0]);
 			if( y>=Dormanpage.l1.size()){
-				_test_logger.log(LogStatus.PASS, "Validation successful-because we found "+y +" items when we choose "+s+" in drop down");
+				child7.log(LogStatus.PASS, "Validation successful-because we found "+y +" items when we choose "+s+" in drop down");
 			}
 			else {
-				_test_logger.log(LogStatus.FAIL, "Validation unsuccessful-because we found "+y +" items when we choose "+s+" in drop down");
+				child7.log(LogStatus.FAIL, "Validation unsuccessful-because we found "+y +" items when we choose "+s+" in drop down");
 			}
 			Thread.sleep(1000);
 			
 		}
 
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child7); 
 			
 		}
 		
 	
 
-	@Test(priority=8,enabled=false,description="Search with VIN ")
+	@Test(priority=9,enabled=true,description="Search with VIN ")
 	public void verifySearchVINResult() throws InterruptedException{
-		
+		child8 = _extent_report.startTest("Search with VIN");
 		
 		Dormanpage.Vinbox.sendKeys("3C3CFFKR2HT535828");
 		Actions builder = new Actions( driver );
@@ -357,19 +380,19 @@ Dormanpage.feedbackno.sendKeys("no");
 		  Thread.sleep(10000);
 		 String errormsg= Dormanpage.Erromsg.getText();
 		  if(errormsg.equals("CAUTION: The search results are not tied to all aspects of your VIN" + "Please verify the selected part type using the Check Your Fit button.")){
-			  _test_logger.log(LogStatus.PASS, "Validation successful-because we found error message  "+errormsg+"  - when our search results are not tied to our searched VIN 3C3CFFKR2HT535828");
+			  child8.log(LogStatus.PASS, "Validation successful-because we found error message  "+errormsg+"  - when our search results are not tied to our searched VIN 3C3CFFKR2HT535828");
 		  }
 		  
 		  else {
-			  _test_logger.log(LogStatus.FAIL, "Validation unsuccessful-because we found error message  "+errormsg+"  - when our search results are not tied to our searched VIN 3C3CFFKR2HT535828"); 
+			  child8.log(LogStatus.FAIL, "Validation unsuccessful-because we found error message  "+errormsg+"  - when our search results are not tied to our searched VIN 3C3CFFKR2HT535828"); 
 		  }
-		  _extent_report.endTest(_test_logger); 
+		  _extent_report.endTest(child8); 
 	}
 
 	
-	@Test(priority=9,enabled=false,description="Search with part number and then click on view details.")
+	@Test(priority=10,enabled=true,description="Search with part number and then click on view details.")
 	public void verifyViewDetailsResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search with part number and then click on view details.");
+		child9 = _extent_report.startTest("Search with part number and then click on view details.");
 		Dormanpage.SearchYMMPT();
 		Thread.sleep(10000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -382,7 +405,7 @@ Dormanpage.feedbackno.sendKeys("no");
 		
 		Thread.sleep(30000);
 		for(int i=0;i<Dormanpage.summaryitem.size();i++) {
-			_test_logger.log(LogStatus.INFO,Dormanpage.summaryitem.get(i).getText()); 
+			child9.log(LogStatus.INFO,Dormanpage.summaryitem.get(i).getText()); 
 			//System.out.println(Dormanpage.summaryitem.get(i).getText());
 		}
 		Dormanpage.CheckYourFitButton.click();
@@ -390,18 +413,18 @@ Dormanpage.feedbackno.sendKeys("no");
 		DormanSearch.dropdownselection(Dormanpage.Constraintdropdown, "V6 182 3.0L");
 		Dormanpage.Submitbutton.click();
 		if(Dormanpage.PartFitLabel.getText().equals("This part is a fit for your vehicle")||Dormanpage.PartFitLabel.getText().equals("Sorry, this part is not a fit for your vehicle.")) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because-  "+ Dormanpage.PartFitLabel.getText()+" is being displayed"); 
+			child9.log(LogStatus.PASS,"Validation successful because-  "+ Dormanpage.PartFitLabel.getText()+" is being displayed"); 
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because-  " +Dormanpage.PartFitLabel.getText()+"  is being displayed"); 
+			child9.log(LogStatus.FAIL,"Validation unsuccessful because-  " +Dormanpage.PartFitLabel.getText()+"  is being displayed"); 
 		}
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child9); 
 		
 		}
 	
-	@Test(priority=10,enabled=false,description="Search by PIN and Select within miles.")
+	@Test(priority=11,enabled=true,description="Search by PIN and Select within miles.")
 	public void verifyPINMILESResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search by PIN and Select within miles.");
+		child10 = _extent_report.startTest("Search by PIN and Select within miles.");
 		Dormanpage.SearchYMMPT();
 		Thread.sleep(10000);
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -412,7 +435,7 @@ Dormanpage.feedbackno.sendKeys("no");
 		 
 		
 		Thread.sleep(30000); 
-	// jse.executeScript("arguments[0].scrollIntoView(false);", Dormanpage.FindLocation);
+	// jse.executeScript("arguments[0].scrollIntoView(true);", Dormanpage.FindLocation);
 		jse.executeScript("scroll(0, 2800)"); // if the element is on top.
 		Thread.sleep(30000);
 		driver.switchTo().frame(Dormanpage.findlocationframe);
@@ -427,92 +450,92 @@ Dormanpage.feedbackno.sendKeys("no");
 		Dormanpage.SearchLocation.click();
 		Thread.sleep(20000);
 		if(Dormanpage.Map.isDisplayed()) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because- proper Location is being displayed in the MAP  "); 
+			child10.log(LogStatus.PASS,"Validation successful because- proper Location is being displayed in the MAP  "); 
 			}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because- proper Location is not being displayed in the MAP  ");
+			child10.log(LogStatus.FAIL,"Validation unsuccessful because- proper Location is not being displayed in the MAP  ");
 		}
 		
 		driver.switchTo().defaultContent();
 		
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child10); 
 		
 		}
 	
-	@Test(priority=11,enabled=false,description="Full Text Search.")
+	@Test(priority=12,enabled=true,description="Full Text Search.")
 	public void verifyFullTextSearchResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Full Text Search.");
+		child11 = _extent_report.startTest("Full Text Search.");
 		Dormanpage.keywordtext.sendKeys("Brake Caliper Bracket Bolts");
 		Dormanpage.keywordclick.click();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found when we search with Brake Caliper Bracket Bolts:"); 
+		child11.log(LogStatus.INFO, "Below are the items found when we search with Brake Caliper Bracket Bolts:"); 
 		
 		for(int i=0;i<Dormanpage.l3.size();i++) {
-			_test_logger.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
+			child11.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
 			}
 	
 		Dormanpage.keywordtext.sendKeys("Disc Brake Hardware Kit");
 		Dormanpage.keywordclick.click();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found when we search with Disc Brake Hardware Kit:"); 
+		child11.log(LogStatus.INFO, "Below are the items found when we search with Disc Brake Hardware Kit:"); 
 		
 		for(int i=0;i<Dormanpage.l3.size();i++) {
 			
 			
-			_test_logger.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
+			child11.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
 			}
 	
 		Dormanpage.keywordtext.sendKeys("Disc Brake Hardware Kit,HW2300");
 		Dormanpage.keywordclick.click();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found when we search with Disc Brake Hardware Kit,HW2300"); 
+		child11.log(LogStatus.INFO, "Below are the items found when we search with Disc Brake Hardware Kit,HW2300"); 
 		
 		for(int i=0;i<Dormanpage.l3.size();i++) {
 			
 			
-			_test_logger.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
+			child11.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
 			}
 		
 		Dormanpage.keywordtext.sendKeys("H620549,Brake Hydraulic Hose");
 		Dormanpage.keywordclick.click();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found when we search with H620549,Brake Hydraulic Hose"); 
+		child11.log(LogStatus.INFO, "Below are the items found when we search with H620549,Brake Hydraulic Hose"); 
 		
 		for(int i=0;i<Dormanpage.l3.size();i++) {
 			
 			
-			_test_logger.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
+			child11.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
 			}
 		
 		
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child11); 
 		
 		}
 	
-	@Test(priority=12,enabled= false, description="No Broken Links for Images.")
+	@Test(priority=13,enabled= true, description="No Broken Links for Images.")
 	public void verifyBrokenlinksResult() throws InterruptedException{
-		  _test_logger = _extent_report.startTest("No Broken Links for Images.");
+		child12 = _extent_report.startTest("No Broken Links for Images.");
 		Dormanpage.SearchYMMPT();
 		List<WebElement> totalLinks=DormanSearch.findAllLinks(driver);
 		
-		_test_logger.log(LogStatus.INFO, "Total number of Links found " + totalLinks.size());
+		child12.log(LogStatus.INFO, "Total number of Links found " + totalLinks.size());
 		   
 		    for (WebElement link : totalLinks) {
 		        try {
-		        	_test_logger.log(LogStatus.PASS, "URL: " + link.getAttribute("src")+ " returned " +DormanSearch. isLinkBroken(new URL(link.getAttribute("src")))); 
+		        	child12.log(LogStatus.PASS, "URL: " + link.getAttribute("src")+ " returned " +DormanSearch. isLinkBroken(new URL(link.getAttribute("src")))); 
 					//System.out.println("URL: " + link.getAttribute("src")+ " returned " + isLinkBroken(new URL(link.getAttribute("src"))));
 					
 
 				} catch (Exception e) {
 					
-				  	_test_logger.log(LogStatus.FAIL,"At " + link.getAttribute("innerHTML") + " Exception occured -&gt; " + e.getMessage()); 
+					child12.log(LogStatus.FAIL,"At " + link.getAttribute("innerHTML") + " Exception occured -&gt; " + e.getMessage()); 
 		    		//System.out.println("At " + link.getAttribute("innerHTML") + " Exception occured -&gt; " + e.getMessage());	
 					
 				}
 
 			}
 		    
-			_extent_report.endTest(_test_logger); 
+			_extent_report.endTest(child12); 
 	
 		
 		
@@ -520,9 +543,9 @@ Dormanpage.feedbackno.sendKeys("no");
 		
 	}
 	
-	@Test(priority=13,enabled=false, description="Search with Year/Make/Model/Part type.")
+	@Test(priority=14,enabled=true, description="Search with Year/Make/Model/Part type.")
 	public void verifyNarrowSearchResult() throws InterruptedException{
-		  _test_logger = _extent_report.startTest("Search with Year/Make/Model/Part type. ");
+		child13 = _extent_report.startTest("Search with Year/Make/Model/Part type. ");
 		Dormanpage.SearchYMMPT();
 		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -530,7 +553,7 @@ Dormanpage.feedbackno.sendKeys("no");
 		
 		
 		
-		_test_logger.log(LogStatus.INFO, "Number of items found before removing item from  You Have Selected menu are : "+Dormanpage.l1.size()); 
+		child13.log(LogStatus.INFO, "Number of items found before removing item from  You Have Selected menu are : "+Dormanpage.l1.size()); 
 		
 		
 		
@@ -543,26 +566,26 @@ Dormanpage.feedbackno.sendKeys("no");
 		a=s1.split(" ");
 		int y = Integer.parseInt(a[2]);
 	
-		_test_logger.log(LogStatus.INFO, "Number of items found after removing item from You Have Selected menu are : "+y);
+		child13.log(LogStatus.INFO, "Number of items found after removing item from You Have Selected menu are : "+y);
 		
-		_test_logger.log(LogStatus.INFO, "Number of items found before click item in Narrow Your Search menu are : "+y);
+		child13.log(LogStatus.INFO, "Number of items found before click item in Narrow Your Search menu are : "+y);
 		Dormanpage.NarrowSearch.click();
 		
 		Dormanpage.NarrowSearchclickitem.click();
 		
-		_test_logger.log(LogStatus.INFO, "Number of items found after click item in Narrow Your Search menu are : "+Dormanpage.l1.size());
-		_test_logger.log(LogStatus.INFO, "Number of items found before checked the item in Filter Your results menu are : "+Dormanpage.l1.size());
+		child13.log(LogStatus.INFO, "Number of items found after click item in Narrow Your Search menu are : "+Dormanpage.l1.size());
+		child13.log(LogStatus.INFO, "Number of items found before checked the item in Filter Your results menu are : "+Dormanpage.l1.size());
 		Dormanpage.FilterYourResults.click();
 		Dormanpage.Selectcheckbox.click();
 		Thread.sleep(10000);
 		jse.executeScript("scroll(250, 0)");
 		Dormanpage.ClearSearch.click();
 		Thread.sleep(20000);
-		_test_logger.log(LogStatus.INFO, "Number of items found after checked item in Filter Your results menu are : "+Dormanpage.l1.size());
+		child13.log(LogStatus.INFO, "Number of items found after checked item in Filter Your results menu are : "+Dormanpage.l1.size());
 		Dormanpage.FilterYourResults.click();
 		Dormanpage.Selectcheckbox.click();
 		Thread.sleep(10000);
-		_test_logger.log(LogStatus.INFO, "Number of items found after unchecked item in Filter Your results menu are : "+Dormanpage.l1.size());
+		child13.log(LogStatus.INFO, "Number of items found after unchecked item in Filter Your results menu are : "+Dormanpage.l1.size());
 		
 		
 		jse.executeScript("scroll(250, 0)"); // if the element is on top.
@@ -583,16 +606,16 @@ Dormanpage.feedbackno.sendKeys("no");
 		Dormanpage.keywordtext.sendKeys(s);
 		Dormanpage.keywordclick.click();
 		
-		_test_logger.log(LogStatus.INFO, "Below are the items found when we search with saved phrase"); 
+		child13.log(LogStatus.INFO, "Below are the items found when we search with saved phrase"); 
 		
 		for(int i=0;i<Dormanpage.l3.size();i++) {
 			
 			
-			_test_logger.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
+			child13.log(LogStatus.INFO,Dormanpage.l3.get(i).getText() ); 
 			}
 		
 		
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child13); 
 	}
 	
 	
@@ -600,9 +623,9 @@ Dormanpage.feedbackno.sendKeys("no");
 	
 	
 
-	@Test(priority=14,enabled=false, description="Advanced Search")
+	@Test(priority=15,enabled=true, description="Advanced Search")
 	public void verifyAdvancedSearchResult() throws InterruptedException{
-		  _test_logger = _extent_report.startTest("Advanced Search");
+		  child14 = _extent_report.startTest("Advanced Search");
 		
 		Thread.sleep(10000);
 		  Dormanpage.keywordtext.sendKeys("Wheel-Studs");
@@ -631,14 +654,14 @@ Dormanpage.feedbackno.sendKeys("no");
 		String a[]=new String[Dormanpage.l1.size()];
 		a=s.split(" ");
 		int y = Integer.parseInt(a[2]);
-		_test_logger.log(LogStatus.INFO,"Total number of items found in advanced search are : "+y); 
+		child14.log(LogStatus.INFO,"Total number of items found in advanced search are : "+y); 
 		
 		
 			if(y>0) {
-				_test_logger.log(LogStatus.PASS,"Total number of items found in advanced search are : "+y+" which is greater than zero"); 
+				child14.log(LogStatus.PASS,"Total number of items found in advanced search are : "+y+" which is greater than zero"); 
 			}
 			else {
-				_test_logger.log(LogStatus.FAIL,"Total number of items found in advanced search are : "+y+" which is zero"); 
+				child14.log(LogStatus.FAIL,"Total number of items found in advanced search are : "+y+" which is zero"); 
 			}
 			JavascriptExecutor jse = (JavascriptExecutor)driver;
 			jse.executeScript("scroll(250, 0)");
@@ -648,24 +671,24 @@ Dormanpage.feedbackno.sendKeys("no");
 			String b[]=new String[Dormanpage.l1.size()];
 			b=s1.split(" ");
 			int z = Integer.parseInt(b[2]);
-			_test_logger.log(LogStatus.INFO,"Total number of items found after clearing advanced search are : "+z); 
+			child14.log(LogStatus.INFO,"Total number of items found after clearing advanced search are : "+z); 
 			if(z>y) {
-				_test_logger.log(LogStatus.PASS,"Total number of items found after clearing  advanced search are : "+z+" which is greater than items found in advanced search"); 
+				child14.log(LogStatus.PASS,"Total number of items found after clearing  advanced search are : "+z+" which is greater than items found in advanced search"); 
 			}
 			else {
-				_test_logger.log(LogStatus.FAIL,"Total number of items found after clearing advanced search are : "+z+" which is less than items found in advanced search"); 
+				child14.log(LogStatus.FAIL,"Total number of items found after clearing advanced search are : "+z+" which is less than items found in advanced search"); 
 			}
 			
 		   
 		   
-			_extent_report.endTest(_test_logger); 
+			_extent_report.endTest(child14); 
 }
 	
 	
 	
-	@Test(priority=16,enabled=false,description="Delete Saved Search from Recent Activities list.")
+	@Test(priority=16,enabled=true,description="Delete Saved Search from Recent Activities list.")
 	public void verifySavedSearchDeletionResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Delete Saved Search from Recent Activities list.");
+		child15 = _extent_report.startTest("Delete Saved Search from Recent Activities list.");
 		Dormanpage.SearchYMMPT();
 		
 		
@@ -687,9 +710,9 @@ Dormanpage.feedbackno.sendKeys("no");
 		driver.switchTo().defaultContent();
 		Dormanpage.RecentActivity.click();
 		
-		Dormanpage.keywordtext.sendKeys("My First Search");
+		/*Dormanpage.keywordtext.sendKeys("My First Search");
 		Dormanpage.keywordclick.click();
-		
+		*/
 		Thread.sleep(20000);
 		
 		driver.switchTo().frame(Dormanpage.RecentActivityframe);
@@ -702,33 +725,33 @@ Dormanpage.feedbackno.sendKeys("no");
 		driver.switchTo().frame(Dormanpage.RecentActivityframe);
 		if(Dormanpage.SavedSearchName.getText().equals("My Second Search"))
 		{
-			_test_logger.log(LogStatus.PASS,"Saved search is renamed with "+Dormanpage.SavedSearchName.getText()+" so validation successful"); 
+			child15.log(LogStatus.PASS,"Saved search is renamed with "+Dormanpage.SavedSearchName.getText()+" so validation successful"); 
 			
 		
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Saved search is renamed with "+Dormanpage.SavedSearchName.getText()+" so validation unsuccessful"); 
+			child15.log(LogStatus.FAIL,"Saved search is renamed with "+Dormanpage.SavedSearchName.getText()+" so validation unsuccessful"); 
 		}
 		Dormanpage.SavedSearchRemove.click();
 		Alert a=driver.switchTo().alert();
 		a.accept();
 		
-		String message=Dormanpage.AlertDismissMessage.getText();
+		/*String message=Dormanpage.AlertDismissMessage.getText();
 		if(message.equals("Currently there are no SAVED SEARCHES.")) {
-			_test_logger.log(LogStatus.PASS,"Message "+ message +"  is being displayed after removing saved search so validation successful"); 
+			child15.log(LogStatus.PASS,"Message "+ message +"  is being displayed after removing saved search so validation successful"); 
 		}
 		
 		else {
-			_test_logger.log(LogStatus.FAIL,"Message "+ message +"  is being displayed after removing saved search so validation unsuccessful");
-		}
-		
+			child15.log(LogStatus.FAIL,"Message "+ message +"  is being displayed after removing saved search so validation unsuccessful");
+		}*/
+		Thread.sleep(20000);
 		driver.switchTo().defaultContent();
 		
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child15);
 		}
-	@Test(priority=17,enabled=false,description="Search from Recent Activites list.")
+	@Test(priority=17,enabled=true,description="Search from Recent Activites list.")
 	public void verifyRecentlyviewditemsResult() throws InterruptedException{
-		_test_logger = _extent_report.startTest("Search from Recent Activites list.");
+		child16 = _extent_report.startTest("Search from Recent Activites list.");
 		Dormanpage.SearchYMMPT();
 		
 		
@@ -754,10 +777,10 @@ Dormanpage.feedbackno.sendKeys("no");
 		int z = Integer.parseInt(b[2]);
 		 
 		if(z>0) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because we found "+z+" items which is greater than zero when we click on recent vehicles"); 
+			child16.log(LogStatus.PASS,"Validation successful because we found "+z+" items which is greater than zero when we click on recent vehicles"); 
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because we found "+z+" items which is not a positive number" );
+			child16.log(LogStatus.FAIL,"Validation unsuccessful because we found "+z+" items which is not a positive number" );
 		} 
 		
 		//driver.switchTo().defaultContent();
@@ -782,21 +805,21 @@ Dormanpage.RecentActivity.click();
 		driver.switchTo().defaultContent();
 		String expected=	Dormanpage.Labelproductname.getText();
 		if(actual.equals(expected)) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because we found item name as "+expected+" from both view details and recently view item click");
+			child16.log(LogStatus.PASS,"Validation successful because we found item name as "+expected+" from both view details and recently view item click");
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because we did not find item name as "+expected+" from both view details and recently view item click");
+			child16.log(LogStatus.FAIL,"Validation unsuccessful because we did not find item name as "+expected+" from both view details and recently view item click");
 		}
 		
 		
 		
-		_extent_report.endTest(_test_logger);
+		_extent_report.endTest(child16);
 		}
 	
 	
-	@Test(priority=15,enabled=false, description="Login Page.")
+	@Test(priority=15,enabled=true, description="Login Page.")
 	public void verifyLoginResult() throws InterruptedException{
-		  _test_logger = _extent_report.startTest("Login Page.");
+		  child17 = _extent_report.startTest("Login Page.");
 		  
 		  String url="https://www.dormanproducts.com/default.aspx";
 		Dormanpage.Login.click();
@@ -806,11 +829,11 @@ Dormanpage.RecentActivity.click();
 		Thread.sleep(10000);
 		System.out.println(driver.getCurrentUrl());
 		if(driver.getCurrentUrl().equals(url)) {
-			_test_logger.log(LogStatus.PASS,"User has been loggedin successfully"); 
+			child17.log(LogStatus.PASS,"User has been loggedin successfully"); 
 		}
 		
 		else {
-			_test_logger.log(LogStatus.FAIL,"Login unsuccessful"); 
+			child17.log(LogStatus.FAIL,"Login unsuccessful"); 
 		}
 		
 		Dormanpage.Hollandar.sendKeys("123");
@@ -822,20 +845,20 @@ Dormanpage.RecentActivity.click();
 		int y = Integer.parseInt(a[2]);
 		
 		if(y>0) {
-			_test_logger.log(LogStatus.PASS,"Validation successful because we found "+y+" items when we search with hollander number");
+			child17.log(LogStatus.PASS,"Validation successful because we found "+y+" items when we search with hollander number");
 		}
 		else {
-			_test_logger.log(LogStatus.FAIL,"Validation unsuccessful because we found "+y+" items when we search with hollander number");
+			child17.log(LogStatus.FAIL,"Validation unsuccessful because we found "+y+" items when we search with hollander number");
 		}
 		
 		Dormanpage.Totalcart.click();
 		Dormanpage.Logout.click();
 		
-	_extent_report.endTest(_test_logger); 
+	_extent_report.endTest(child17); 
 	}
-	@Test(priority=18,enabled=false, description="Select Spanish Language.")
+	@Test(priority=18,enabled=true, description="Select Spanish Language.")
 	public void verifySpanishSearchResult() throws InterruptedException{
-		  _test_logger = _extent_report.startTest("Select Spanish Language.");
+		child18 = _extent_report.startTest("Select Spanish Language.");
 		Dormanpage.Languageclick.click();
 		
 		Actions builder = new Actions( driver );
@@ -844,12 +867,12 @@ Dormanpage.RecentActivity.click();
 		  Thread.sleep(10000);
 		  
 		String header=  Dormanpage.header_spanish.getText();
-		  _test_logger.log(LogStatus.INFO,header+" is being displayed in spanish  which is eqvivalent to Search Products in English"); 
+		child18.log(LogStatus.INFO,header+" is being displayed in spanish  which is eqvivalent to Search Products in English"); 
 		  
 		  Dormanpage.SearchSpanishYMMPT();
 		Thread.sleep(10000);
 		 
-		  _test_logger.log(LogStatus.INFO,Dormanpage.Submitbutton.getAttribute("value")+" is being displayed in spanish  which is eqvivalent to submit in English"); 
+		child18.log(LogStatus.INFO,Dormanpage.Submitbutton.getAttribute("value")+" is being displayed in spanish  which is eqvivalent to submit in English"); 
 		  
 		  Dormanpage.Submitbutton.click();
 		  
@@ -862,32 +885,32 @@ Dormanpage.RecentActivity.click();
 			jse.executeScript("scroll(250, 0)"); // if the element is on top.
 			Thread.sleep(10000);
 			
-			 _test_logger.log(LogStatus.INFO,Dormanpage.viewdetails.getText()+" is being displayed in spanish  which is eqvivalent to View Details in English"); 
+			child18.log(LogStatus.INFO,Dormanpage.viewdetails.getText()+" is being displayed in spanish  which is eqvivalent to View Details in English"); 
 
 			Dormanpage.viewdetails.click();
 			
-			_test_logger.log(LogStatus.INFO,"Below are summary items when we click  view details in spanish language"); 
+			child18.log(LogStatus.INFO,"Below are summary items when we click  view details in spanish language"); 
 			Thread.sleep(30000);
 			for(int i=0;i<Dormanpage.summaryitem_spanish.size();i++) {
-				_test_logger.log(LogStatus.INFO,Dormanpage.summaryitem_spanish.get(i).getText()); 
+				child18.log(LogStatus.INFO,Dormanpage.summaryitem_spanish.get(i).getText()); 
 				//System.out.println(Dormanpage.summaryitem.get(i).getText());
 			}
-			 _test_logger.log(LogStatus.INFO,Dormanpage.CheckYourFitButton.getText()+" is being displayed in spanish  which is eqvivalent to Check your Fit Button in English"); 
+			child18.log(LogStatus.INFO,Dormanpage.CheckYourFitButton.getText()+" is being displayed in spanish  which is eqvivalent to Check your Fit Button in English"); 
 			Dormanpage.CheckYourFitButton.click();
 			
 			DormanSearch.dropdownselection(Dormanpage.Constraintdropdown, "Rear");
 			Dormanpage.Submitbutton.click();
 			if(Dormanpage.PartFitLabel.getText().equals("Esta pieza es un acoplamiento para su vehículo")||Dormanpage.PartFitLabel.getText().equals("Sorry, this part is not a fit for your vehicle.")) {
-				_test_logger.log(LogStatus.PASS, Dormanpage.PartFitLabel.getText()+"is being displayed so validation successful"); 
+				child18.log(LogStatus.PASS, Dormanpage.PartFitLabel.getText()+"is being displayed so validation successful"); 
 			}
-			_extent_report.endTest(_test_logger); 
+			_extent_report.endTest(child18); 
 		  
 		  
 		  
 		  
 		
 		
-		_extent_report.endTest(_test_logger); 
+		_extent_report.endTest(child18); 
 	}
 	@AfterMethod //AfterMethod annotation - This method executes after every test execution
 	public void screenShot(ITestResult result){
@@ -912,19 +935,23 @@ Dormanpage.RecentActivity.click();
 		
 		
 		_test_logger
-	    .appendChild(parent1).appendChild(child1).appendChild(child2);
-	
+	    .appendChild(child1).appendChild(child2).appendChild(child3)
+		.appendChild(child4).appendChild(child5).appendChild(child6)
 		
-		_extent_report.endTest(parent1);
-		
-		
-		
-		
-		
+		.appendChild(child7).appendChild(child8).appendChild(child9)
+		.appendChild(child10).appendChild(child11).appendChild(child12)
+		.appendChild(child13).appendChild(child14).appendChild(child15)
+		.appendChild(child16).appendChild(child17).appendChild(child18);
 		
 		
 		
-	//	_extent_report.endTest(_test_logger);
+		
+		
+		
+		
+		
+		
+		_extent_report.endTest(_test_logger);
 		_extent_report.flush(); 
       //  _extent_report.close(); 
 		

@@ -1,99 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
   <reporter-output>
   </reporter-output>
-  <suite name="Dorman Application Test Automation Test Suite" duration-ms="21169" started-at="2018-09-26T09:49:20Z" finished-at="2018-09-26T09:49:41Z">
+  <suite name="Dorman Application Test Automation Test Suite" duration-ms="1538765" started-at="2018-10-30T11:41:30Z" finished-at="2018-10-30T12:07:08Z">
     <groups>
     </groups>
-    <test name="Dorman Products search  Test Cases" duration-ms="21169" started-at="2018-09-26T09:49:20Z" finished-at="2018-09-26T09:49:41Z">
+    <test name="Dorman Products search  Test Cases" duration-ms="1538765" started-at="2018-10-30T11:41:30Z" finished-at="2018-10-30T12:07:08Z">
       <class name="com.dorman.qa.testcases.DormanSearchPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="setUp" is-config="true" duration-ms="19867" started-at="2018-09-26T15:19:20Z" finished-at="2018-09-26T15:19:40Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="setUp" is-config="true" duration-ms="29561" started-at="2018-10-30T17:11:30Z" finished-at="2018-10-30T17:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dorman.qa.testcases.Page2@42dafa95]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dorman.qa.testcases.Page3@6500df86]" name="setUp" is-config="true" duration-ms="1" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.dorman.qa.testcases.Parent4@402a079c]" name="setUp" is-config="true" duration-ms="0" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="searhc()[pri:1, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="searhc" duration-ms="21" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
+        <test-method status="PASS" signature="searhc()[pri:1, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="searhc" duration-ms="32" started-at="2018-10-30T17:11:59Z" finished-at="2018-10-30T17:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searhc -->
-        <test-method status="PASS" signature="verifySearchYMMPTResult()[pri:2, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchYMMPTResult" duration-ms="7" started-at="2018-09-26T15:19:40Z" description="Search with combinations Year, Make, Model and Part type." finished-at="2018-09-26T15:19:40Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="2" started-at="2018-10-30T17:11:59Z" finished-at="2018-10-30T17:11:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searhc status=SUCCESS method=DormanSearchPageTest.searhc()[pri:1, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchYMMPTResult()[pri:2, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchYMMPTResult" duration-ms="37858" started-at="2018-10-30T17:11:59Z" description="Search with combinations Year, Make, Model and Part type." finished-at="2018-10-30T17:12:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchYMMPTResult -->
-        <test-method status="PASS" signature="verifySearchYMMKWResult()[pri:3, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchYMMKWResult" duration-ms="3" started-at="2018-09-26T15:19:40Z" description="Search with combination Year, Make, Model and Keyword." finished-at="2018-09-26T15:19:40Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:12:37Z" finished-at="2018-10-30T17:12:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchYMMPTResult status=SUCCESS method=DormanSearchPageTest.verifySearchYMMPTResult()[pri:2, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchYMMKWResult()[pri:3, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchYMMKWResult" duration-ms="30084" started-at="2018-10-30T17:12:37Z" description="Search with combination Year, Make, Model and Keyword." finished-at="2018-10-30T17:13:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchYMMKWResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="tearDown" is-config="true" duration-ms="647" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:41Z">
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:13:07Z" finished-at="2018-10-30T17:13:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchYMMKWResult status=SUCCESS method=DormanSearchPageTest.verifySearchYMMKWResult()[pri:3, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dorman.qa.testcases.Page2@42dafa95]" name="tearDown" is-config="true" duration-ms="220" started-at="2018-09-26T15:19:41Z" finished-at="2018-09-26T15:19:41Z">
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchOEResult()[pri:4, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchOEResult" duration-ms="91561" started-at="2018-10-30T17:13:07Z" description="Search with OE # or Interchange #." finished-at="2018-10-30T17:14:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dorman.qa.testcases.Page3@6500df86]" name="tearDown" is-config="true" duration-ms="136" started-at="2018-09-26T15:19:41Z" finished-at="2018-09-26T15:19:41Z">
+        </test-method> <!-- verifySearchOEResult -->
+        <test-method status="PASS" signature="verifySearchPTResult()[pri:5, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchPTResult" duration-ms="40074" started-at="2018-10-30T17:14:39Z" description="Search with Part number." finished-at="2018-10-30T17:15:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dorman.qa.testcases.Parent4@402a079c]" name="tearDown" is-config="true" duration-ms="139" started-at="2018-09-26T15:19:41Z" finished-at="2018-09-26T15:19:41Z">
+        </test-method> <!-- verifySearchPTResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:14:39Z" finished-at="2018-10-30T17:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchOEResult status=SUCCESS method=DormanSearchPageTest.verifySearchOEResult()[pri:4, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:15:19Z" finished-at="2018-10-30T17:15:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchPTResult status=SUCCESS method=DormanSearchPageTest.verifySearchPTResult()[pri:5, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchKWResult()[pri:6, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchKWResult" duration-ms="45562" started-at="2018-10-30T17:15:19Z" description="Search with Keyword." finished-at="2018-10-30T17:16:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchKWResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:16:04Z" finished-at="2018-10-30T17:16:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchKWResult status=SUCCESS method=DormanSearchPageTest.verifySearchKWResult()[pri:6, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchPhraseResult()[pri:7, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchPhraseResult" duration-ms="97679" started-at="2018-10-30T17:16:04Z" description="Search with Phrase." finished-at="2018-10-30T17:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchPhraseResult -->
+        <test-method status="PASS" signature="verifySearchKEYWORDResult()[pri:8, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchKEYWORDResult" duration-ms="80372" started-at="2018-10-30T17:17:42Z" description="Total Records Per page - 25, 50, 100." finished-at="2018-10-30T17:19:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchKEYWORDResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:17:42Z" finished-at="2018-10-30T17:17:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchPhraseResult status=SUCCESS method=DormanSearchPageTest.verifySearchPhraseResult()[pri:7, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySearchVINResult()[pri:9, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySearchVINResult" duration-ms="25296" started-at="2018-10-30T17:19:03Z" description="Search with VIN " finished-at="2018-10-30T17:19:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchVINResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:19:03Z" finished-at="2018-10-30T17:19:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchKEYWORDResult status=SUCCESS method=DormanSearchPageTest.verifySearchKEYWORDResult()[pri:8, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:19:28Z" finished-at="2018-10-30T17:19:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchVINResult status=SUCCESS method=DormanSearchPageTest.verifySearchVINResult()[pri:9, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyViewDetailsResult()[pri:10, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyViewDetailsResult" duration-ms="105377" started-at="2018-10-30T17:19:28Z" description="Search with part number and then click on view details." finished-at="2018-10-30T17:21:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewDetailsResult -->
+        <test-method status="PASS" signature="verifyPINMILESResult()[pri:11, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyPINMILESResult" duration-ms="182089" started-at="2018-10-30T17:21:13Z" description="Search by PIN and Select within miles." finished-at="2018-10-30T17:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPINMILESResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:21:13Z" finished-at="2018-10-30T17:21:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyViewDetailsResult status=SUCCESS method=DormanSearchPageTest.verifyViewDetailsResult()[pri:10, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:24:15Z" finished-at="2018-10-30T17:24:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPINMILESResult status=SUCCESS method=DormanSearchPageTest.verifyPINMILESResult()[pri:11, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyFullTextSearchResult()[pri:12, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyFullTextSearchResult" duration-ms="28427" started-at="2018-10-30T17:24:15Z" description="Full Text Search." finished-at="2018-10-30T17:24:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFullTextSearchResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:24:44Z" finished-at="2018-10-30T17:24:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFullTextSearchResult status=SUCCESS method=DormanSearchPageTest.verifyFullTextSearchResult()[pri:12, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyBrokenlinksResult()[pri:13, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyBrokenlinksResult" duration-ms="41302" started-at="2018-10-30T17:24:44Z" description="No Broken Links for Images." finished-at="2018-10-30T17:25:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBrokenlinksResult -->
+        <test-method status="PASS" signature="verifyNarrowSearchResult()[pri:14, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyNarrowSearchResult" duration-ms="178309" started-at="2018-10-30T17:25:25Z" description="Search with Year/Make/Model/Part type." finished-at="2018-10-30T17:28:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNarrowSearchResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:25:25Z" finished-at="2018-10-30T17:25:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBrokenlinksResult status=SUCCESS method=DormanSearchPageTest.verifyBrokenlinksResult()[pri:13, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyAdvancedSearchResult()[pri:15, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyAdvancedSearchResult" duration-ms="93167" started-at="2018-10-30T17:28:23Z" description="Advanced Search" finished-at="2018-10-30T17:29:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAdvancedSearchResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:28:23Z" finished-at="2018-10-30T17:28:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNarrowSearchResult status=SUCCESS method=DormanSearchPageTest.verifyNarrowSearchResult()[pri:14, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyLoginResult()[pri:15, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyLoginResult" duration-ms="30791" started-at="2018-10-30T17:29:57Z" description="Login Page." finished-at="2018-10-30T17:30:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:29:57Z" finished-at="2018-10-30T17:29:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAdvancedSearchResult status=SUCCESS method=DormanSearchPageTest.verifyAdvancedSearchResult()[pri:15, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="1" started-at="2018-10-30T17:30:27Z" finished-at="2018-10-30T17:30:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginResult status=SUCCESS method=DormanSearchPageTest.verifyLoginResult()[pri:15, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySavedSearchDeletionResult()[pri:16, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySavedSearchDeletionResult" duration-ms="120600" started-at="2018-10-30T17:30:27Z" description="Delete Saved Search from Recent Activities list." finished-at="2018-10-30T17:32:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySavedSearchDeletionResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:32:28Z" finished-at="2018-10-30T17:32:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySavedSearchDeletionResult status=SUCCESS method=DormanSearchPageTest.verifySavedSearchDeletionResult()[pri:16, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifyRecentlyviewditemsResult()[pri:17, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifyRecentlyviewditemsResult" duration-ms="140422" started-at="2018-10-30T17:32:28Z" description="Search from Recent Activites list." finished-at="2018-10-30T17:34:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecentlyviewditemsResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="0" started-at="2018-10-30T17:34:48Z" finished-at="2018-10-30T17:34:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRecentlyviewditemsResult status=SUCCESS method=DormanSearchPageTest.verifyRecentlyviewditemsResult()[pri:17, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="verifySpanishSearchResult()[pri:18, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="verifySpanishSearchResult" duration-ms="139193" started-at="2018-10-30T17:34:48Z" description="Select Spanish Language." finished-at="2018-10-30T17:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySpanishSearchResult -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="screenShot" is-config="true" duration-ms="1" started-at="2018-10-30T17:37:08Z" finished-at="2018-10-30T17:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySpanishSearchResult status=SUCCESS method=DormanSearchPageTest.verifySpanishSearchResult()[pri:18, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.dorman.qa.testcases.DormanSearchPageTest@589838eb]" name="tearDown" is-config="true" duration-ms="857" started-at="2018-10-30T17:37:08Z" finished-at="2018-10-30T17:37:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.dorman.qa.testcases.DormanSearchPageTest -->
-      <class name="com.dorman.qa.testcases.Page2">
-        <test-method status="PASS" signature="searhc()[pri:5, instance:com.dorman.qa.testcases.Page2@42dafa95]" name="searhc" duration-ms="2" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searhc -->
-        <test-method status="PASS" signature="print()[pri:6, instance:com.dorman.qa.testcases.Page2@42dafa95]" name="print" duration-ms="2" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- print -->
-        <test-method status="PASS" signature="verifySpanishSearchResult()[pri:6, instance:com.dorman.qa.testcases.Page2@42dafa95]" name="verifySpanishSearchResult" duration-ms="11" started-at="2018-09-26T15:19:40Z" description="Select Spanish Language." finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpanishSearchResult -->
-      </class> <!-- com.dorman.qa.testcases.Page2 -->
-      <class name="com.dorman.qa.testcases.Page3">
-        <test-method status="PASS" signature="searhc()[pri:7, instance:com.dorman.qa.testcases.Page3@6500df86]" name="searhc" duration-ms="5" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searhc -->
-        <test-method status="PASS" signature="verifySpanishSearchResult()[pri:8, instance:com.dorman.qa.testcases.Page3@6500df86]" name="verifySpanishSearchResult" duration-ms="4" started-at="2018-09-26T15:19:40Z" description="Select Spanish Language." finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpanishSearchResult -->
-        <test-method status="PASS" signature="print()[pri:9, instance:com.dorman.qa.testcases.Page3@6500df86]" name="print" duration-ms="1" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- print -->
-      </class> <!-- com.dorman.qa.testcases.Page3 -->
-      <class name="com.dorman.qa.testcases.Parent4">
-        <test-method status="PASS" signature="searhc()[pri:10, instance:com.dorman.qa.testcases.Parent4@402a079c]" name="searhc" duration-ms="2" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searhc -->
-        <test-method status="PASS" signature="verifySpanishSearchResult()[pri:11, instance:com.dorman.qa.testcases.Parent4@402a079c]" name="verifySpanishSearchResult" duration-ms="2" started-at="2018-09-26T15:19:40Z" description="Select Spanish Language." finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySpanishSearchResult -->
-        <test-method status="PASS" signature="print()[pri:12, instance:com.dorman.qa.testcases.Parent4@402a079c]" name="print" duration-ms="4" started-at="2018-09-26T15:19:40Z" finished-at="2018-09-26T15:19:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- print -->
-      </class> <!-- com.dorman.qa.testcases.Parent4 -->
     </test> <!-- Dorman Products search  Test Cases -->
   </suite> <!-- Dorman Application Test Automation Test Suite -->
 </testng-results>

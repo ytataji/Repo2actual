@@ -8,9 +8,6 @@
 	<test name="Dorman Products search  Test Cases">
 		<classes>
 			<class name="com.dorman.qa.testcases.DormanSearchPageTest"></class>
-			<class name="com.dorman.qa.testcases.Page2"></class>
-			<class name="com.dorman.qa.testcases.Page3"></class>
-			<class name="com.dorman.qa.testcases.Parent4"></class>
 		</classes>
 	</test>
 </suite>
